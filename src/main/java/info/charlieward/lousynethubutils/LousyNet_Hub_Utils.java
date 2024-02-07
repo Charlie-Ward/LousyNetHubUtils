@@ -8,7 +8,6 @@ public final class LousyNet_Hub_Utils extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
         getLogger().info("LousyNet-Hub-Utils v." + this.getDescription().getVersion() + " has loaded.");
 
         getServer().getPluginManager().registerEvents(new noJoinMessage(), this);
@@ -17,6 +16,6 @@ public final class LousyNet_Hub_Utils extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
+        getLogger().info("LousyNet-Hub-Utils v." + this.getDescription().getVersion() + " has been disable.");
     }
 }
