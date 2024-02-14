@@ -16,6 +16,6 @@ public final class LousyNet_Hub_Utils extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        getLogger().info("LousyNet-Hub-Utils v." + this.getDescription().getVersion() + " has been disable.");
+        getLogger().info("LousyNet-Hub-Utils v." + this.getDescription().getVersion() + " has been disabled.");
     }
 }
