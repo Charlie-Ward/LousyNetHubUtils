@@ -2,6 +2,7 @@ package info.charlieward.lousynethubutils;
 
 import info.charlieward.lousynethubutils.listeners.noDeathDrops;
 import info.charlieward.lousynethubutils.listeners.noJoinMessage;
+import info.charlieward.lousynethubutils.listeners.noLeaveMessage;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class LousyNet_Hub_Utils extends JavaPlugin {
@@ -12,6 +13,7 @@ public final class LousyNet_Hub_Utils extends JavaPlugin {
 
         getServer().getPluginManager().registerEvents(new noJoinMessage(), this);
         getServer().getPluginManager().registerEvents(new noDeathDrops(), this);
+        getServer().getPluginManager().registerEvents(new noLeaveMessage(), this);
     }
 
     @Override
